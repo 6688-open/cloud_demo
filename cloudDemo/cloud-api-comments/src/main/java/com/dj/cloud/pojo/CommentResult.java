@@ -17,4 +17,5 @@ public class CommentResult <T> {
     public CommentResult(Integer code, String message) {
         this(code, message , null);
     }
+
 }
