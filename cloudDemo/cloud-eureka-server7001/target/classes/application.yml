@@ -27,8 +27,8 @@ eureka:
     fetch-registry: false
 
     service-url:
-      defaultZone: http://eureka7002.com:7002/eureka/ #集群 注册中心相互注册
-      #defaultZone: http://eureka7001.com:7001/eureka/
+      #defaultZone: http://eureka7002.com:7002/eureka/ #集群 注册中心相互注册
+      defaultZone: http://eureka7001.com:7001/eureka/
 #  server:
 #    enable-self-preservation: false   #禁止自我保护  默认是true
 #    eviction-interval-timer-in-ms: 2000   #心跳时间   默认90s
