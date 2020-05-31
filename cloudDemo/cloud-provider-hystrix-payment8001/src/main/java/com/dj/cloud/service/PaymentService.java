@@ -21,4 +21,8 @@ public interface PaymentService extends IService<Payment> {
      * @return
      */
     String paymentInfo_ERROR(Integer id);
+
+
+    //###########################服务熔断
+    String paymentCircuitBreaker(Integer id);
 }

@@ -1,8 +1,10 @@
 package com.dj.cloud.service;
 
+import cn.hutool.core.util.IdUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dj.cloud.mapper.PaymentMapper;
 import com.dj.cloud.pojo.Payment;
+import com.netflix.hystrix.HystrixCommandProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.stereotype.Service;
@@ -11,6 +13,9 @@ import java.util.concurrent.TimeUnit;
 
 @Service
 public class PaymentServiceImpl  extends ServiceImpl<PaymentMapper, Payment> implements PaymentService {
+
+
+    //#############################################服务降级
 
     @Override
     public String paymentInfo_OK(Integer id) {
@@ -42,6 +47,8 @@ public class PaymentServiceImpl  extends ServiceImpl<PaymentMapper, Payment> imp
     }
 
 
+
+
     /**
      *  方法 paymentInfo_ERROR  超时  卡顿 异常
      *  服务降级
@@ -50,4 +57,45 @@ public class PaymentServiceImpl  extends ServiceImpl<PaymentMapper, Payment> imp
     public String paymentInfo_ERRORHandler(Integer id){
         return "服务方降级处理";
     }
+
+
+
+
+
+    //#############################################服务熔断
+
+    /**
+     * 服务熔断
+     * HystrixCommandProperties
+     * @param id
+     * @return
+     */
+    @Override
+    @HystrixCommand(fallbackMethod = "paymentCircuitBreaker_fallback", commandProperties = {
+            @HystrixProperty(name = "circuitBreaker.enabled", value = "true"),   //是否开启断路器
+            @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"), //请求次数
+            @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"), //时间窗口期 在某个时间内
+            @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60"),//失败率达到多少后跳闸
+    })
+    public String paymentCircuitBreaker(Integer id) {
+
+        if (id < 0) {
+            throw new RuntimeException("id 不能为负数");
+        }
+        String serialNumber = IdUtil.simpleUUID();
+        return Thread.currentThread().getName()+"\t调用成功  流水号： "+ serialNumber;
+    }
+
+    public String paymentCircuitBreaker_fallback(Integer id){
+        return "id 不能为负数 稍后再试，  id = "+ id;
+    }
+
+
+
+
+
+
+
+
+
 }
