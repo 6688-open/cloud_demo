@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-api-comments/cloud-api-comments.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-api-comments/cloud-api-comments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-config-center-3344/cloud-config-center-3344.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-config-center-3344/cloud-config-center-3344.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-config-client-3355/cloud-config-client-3355.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-config-client-3355/cloud-config-client-3355.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-consumer-feign-hystrix-order80/cloud-consumer-feign-hystrix-order80.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-consumer-feign-hystrix-order80/cloud-consumer-feign-hystrix-order80.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-consumer-feign-order80/cloud-consumer-feign-order80.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-consumer-feign-order80/cloud-consumer-feign-order80.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-consumer-hystrix-dashboard-order9001/cloud-consumer-hystrix-dashboard-order9001.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-consumer-hystrix-dashboard-order9001/cloud-consumer-hystrix-dashboard-order9001.iml" />
