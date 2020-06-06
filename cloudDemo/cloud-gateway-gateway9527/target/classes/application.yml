@@ -1,0 +1,58 @@
+
+spring:
+  application:
+    name: clould-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true   # 开启从注册中心动态创建路由  利用微服务名动态路由
+      routes:
+        - id: payemnt_routh # payment_route  # 路由ID 没有固定规则 但是要求唯一 建议配合服务名
+          #uri: http://localhost:8001         # 匹配后提供服务的路由地址
+          uri: lb://clould-payment-service         # 匹配后提供服务的路由地址
+          predicates:
+#            - Path=/payment/get/**           # 断言 路径相匹配 进行路由
+#            - After=2020-06-06T19:36:47.976+08:00[Asia/Shanghai] # ZonedDateTime now = ZonedDateTime.now();  //默认时区
+#            - Before=2020-06-06T19:36:47.976+08:00[Asia/Shanghai]
+#            - Between=2020-06-06T19:36:47.976+08:00[Asia/Shanghai],2020-06-06T19:36:47.976+08:00[Asia/Shanghai]
+#            - Cookie=username,zzyy
+            - Method=GET
+
+
+        - id: payemnt_routh2 # payment_route  # 路由ID 没有固定规则 但是要求唯一 建议配合服务名
+          #uri: http://localhost:8001         # 匹配后提供服务的路由地址
+          uri: lb://clould-payment-service         # 匹配后提供服务的路由地址
+          predicates:
+#            - Path=/payment/lb/**           # 断言 路径相匹配 进行路由
+            - Method=GET
+
+
+
+server:
+  port: 9527
+
+eureka:
+  client:
+    # 表示将自己注册进去向服务注册中心eureka-server
+    register-with-eureka: true
+    #是否从eureka-server抓取已有的注册信息 默认为true 单节点无所谓 集群必须设置true才能配合ribbon使用负载均衡
+    fetchRegistry: true
+
+    service-url:
+      defaultZone: http://localhost:7001/eureka/ #单机
+      #defaultZone: http://eureka7002.com:7002/eureka, http://eureka7001.com:7001/eureka  #集群版
+  instance:
+    instance-id: cloudGatewayService9527
+    prefer-ip-address: true  #访问路径可以显示IP地址
+    hostname: cloud-gateway-service
+
+
+#    #Eureka客户端向服务端发送心跳的时间 单位秒 默认30
+#    lease-renewal-interval-in-seconds: 30
+#    #Eureka服务端在接收到最后一次心跳后等待时间上线 单位 秒  默认是90秒 超时就删除服务
+#    lease-expiration-duration-in-seconds: 90
+
+
+
+

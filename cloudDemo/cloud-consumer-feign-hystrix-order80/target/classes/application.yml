@@ -1,0 +1,82 @@
+
+
+
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/1804?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    jedis:
+      pool:
+        max-active: 1024
+        min-idle: 100
+        max-wait: 7000
+        max-idle: 150
+  application:
+    name: clould-hystrix-order-service
+
+
+
+#logging:
+#  level:
+#    com.dj.boot.mapper: debug
+#那些 自动配置的组件启用  那些没有生效
+#debug: true
+
+
+
+server:
+  port: 80
+
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*/*.xml
+  type-aliases-package: com.dj.cloud.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+#mybatis:
+#  mapper-locations: classpath:mapper/*/*.xml
+#  type-aliases-package: com.dj.cloud.pojo
+
+
+
+eureka:
+  client:
+    # 表示将自己注册进去向服务注册中心eureka-server
+    register-with-eureka: true
+    #是否从eureka-server抓取已有的注册信息 默认为true 单节点无所谓 集群必须设置true才能配合ribbon使用负载均衡
+    fetchRegistry: true
+
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+      #defaultZone: http://eureka7002.com:7002/eureka, http://eureka7001.com:7001/eureka  #集群版
+
+  instance:
+      instance-id: consumer-hystrix-order80
+      prefer-ip-address: true  #访问路径可以显示IP地址
+
+
+#设置fiegn客户端超时时间  opeign  默认支持ribon
+ribbon:
+  ReadTimeout: 5000    #指的是建立连接所用的时间  适用于网络正常的情况下 两端所连接的时间
+  ConnectTimeout: 5000  # 指的是建立连接后从服务器上读取到可用资源所用的时间
+
+
+
+logging:
+  level:
+    com.dj.cloud.feign.PaymentFeign: debug # feign日志以什么级别监控那个接口
+
+
+#客户端开启 feign 调用降级
+feign:
+  hystrix:
+    enabled: true
