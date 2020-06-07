@@ -32,6 +32,7 @@
     <module>cloudalibaba-provider-paymemnt9001</module>
     <module>cloudalibaba-provider-paymemnt9002</module>
     <module>cloudalibaba-consumer-nacos-order83</module>
+    <module>cloudalibaba-config-nacos-client3377</module>
   </modules>
 
   <name>Maven</name>
