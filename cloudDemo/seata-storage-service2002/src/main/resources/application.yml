@@ -1,0 +1,85 @@
+
+server:
+  port: 2002
+
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/seata_storage?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    jedis:
+      pool:
+        max-active: 1024
+        min-idle: 100
+        max-wait: 7000
+        max-idle: 150
+  application:
+    name: seata-storage-service
+    # nacos注册中心
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848   #如果是nacos集群 配置nginx的ip+port
+    sentinel:
+      transport:
+        #配置 sentinel dashboard 地址
+        dashboard: localhost:8080
+        #默认8719 端口号 假如占用会自动从8719开始依次+扫描  直到找到未被占用的端口
+        port: 8719
+      datasource:   #sentinel规则持久化  进nacos
+        ds1:
+          nacos:
+            server-addr: localhost:8848
+            dataId: cloudalibaba-sentinel-service
+            groupId: DEFAULD_GROUP
+            date-type: json
+            rule-type: flow
+    alibaba:
+      seata:
+        tx-service-group: fsp_tx_group  #与自定义事务组名一致
+
+
+#监控 图形化  暴露点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+
+
+logging:
+  level:
+    com.dj.boot.mapper: debug
+
+
+
+
+
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*/*.xml
+  type-aliases-package: com.dj.cloud.domain
+  configuration:
+    map-underscore-to-camel-case: true
+#mybatis:
+#  mapper-locations: classpath:mapper/*/*.xml
+#  type-aliases-package: com.dj.cloud.pojo
+
+
+
+
+
+ #支持 sentinel
+feign:
+  sentinel:
+    enabled: true
