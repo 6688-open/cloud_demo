@@ -6,6 +6,7 @@ import com.dj.cloud.domain.Order;
 import com.dj.cloud.feign.AccountFeignService;
 import com.dj.cloud.feign.StorageFeignService;
 import com.dj.cloud.mapper.OrderMapper;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,6 +28,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
 
 
     @Override
+    @GlobalTransactional(name = "fsp-create-order", rollbackFor = Exception.class)
     public void addOrder(Order order) {
         log.info("创建订单");
         //下订单
