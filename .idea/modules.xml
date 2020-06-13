@@ -19,7 +19,14 @@
       <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-provider-payment8002/cloud-provider-payment8002.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-provider-payment8002/cloud-provider-payment8002.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-provider-payment8004/cloud-provider-payment8004.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-provider-payment8004/cloud-provider-payment8004.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-providerconsul-payment8006/cloud-providerconsul-payment8006.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-providerconsul-payment8006/cloud-providerconsul-payment8006.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-stream-rabbitmq-8801/cloud-stream-rabbitmq-8801.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-stream-rabbitmq-8801/cloud-stream-rabbitmq-8801.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloud-stream-rabbitmq-consumer8802/cloud-stream-rabbitmq-consumer8802.iml" filepath="$PROJECT_DIR$/cloudDemo/cloud-stream-rabbitmq-consumer8802/cloud-stream-rabbitmq-consumer8802.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloudDemo.iml" filepath="$PROJECT_DIR$/cloudDemo/cloudDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-config-nacos-client3377/cloudalibaba-config-nacos-client3377.iml" filepath="$PROJECT_DIR$/cloudDemo/cloudalibaba-config-nacos-client3377/cloudalibaba-config-nacos-client3377.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-consumer-nacos-order83/cloudalibaba-consumer-nacos-order83.iml" filepath="$PROJECT_DIR$/cloudDemo/cloudalibaba-consumer-nacos-order83/cloudalibaba-consumer-nacos-order83.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-provider-paymemnt9001/cloudalibaba-provider-paymemnt9001.iml" filepath="$PROJECT_DIR$/cloudDemo/cloudalibaba-provider-paymemnt9001/cloudalibaba-provider-paymemnt9001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-provider-paymemnt9002/cloudalibaba-provider-paymemnt9002.iml" filepath="$PROJECT_DIR$/cloudDemo/cloudalibaba-provider-paymemnt9002/cloudalibaba-provider-paymemnt9002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/cloudalibaba-sintinel-service8401.iml" filepath="$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/cloudalibaba-sintinel-service8401.iml" />
     </modules>
   </component>
 </project>

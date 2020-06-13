@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ee2ae0-93d3-4edd-a6b9-534c941e7a34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloudDemo/cloud-config-center-3344/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudDemo/cloud-config-center-3344/src/main/java/com/dj/cloud/ConfigCenterMain3344.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudDemo/cloud-config-center-3344/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudDemo/cloud-config-client-3355/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudDemo/cloud-config-client-3355/src/main/java/com/dj/cloud/ConfigClientMain3355.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudDemo/cloud-config-client-3355/src/main/java/com/dj/cloud/controller/ConfigClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudDemo/cloud-config-client-3355/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudDemo/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudDemo/cloud-provider-payment8001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/src/main/java/com/dj/cloud/SentinelMain8401.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/src/main/java/com/dj/cloud/controller/FlowLimitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/src/main/java/com/dj/cloud/controller/RateLimitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/src/main/java/com/dj/cloud/handler/CustomerBlockHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloudDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudDemo/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +76,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="J:/springcloud-config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -89,17 +87,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cloud" />
       <recent name="com.dj.cloud" />
-      <recent name="com.dj.cloud.feign" />
       <recent name="com.dj.cloud.controller" />
+      <recent name="com.dj.cloud.config" />
+      <recent name="cloud" />
+      <recent name="com.dj.cloud.feign" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\cloud_demo\cloudDemo\cloud-config-client-3355\src\main\resources" />
-      <recent name="E:\cloud_demo\cloudDemo\cloud-config-center-3344\src\main\resources" />
-      <recent name="E:\cloud_demo\cloudDemo\cloud-gateway-gateway9527\src\main\resources" />
-      <recent name="E:\cloud_demo\cloudDemo\cloud-consumer-hystrix-dashboard-order9001\src\main\resources" />
-      <recent name="E:\cloud_demo\cloudDemo\cloud-consumer-feign-hystrix-order80\src\main\java\com\dj\cloud" />
+      <recent name="E:\cloud_demo\cloudDemo\cloudalibaba-sintinel-service8401\src\main\resources" />
+      <recent name="E:\cloud_demo\cloudDemo\cloudalibaba-config-nacos-client3377\src\main\resources" />
+      <recent name="E:\cloud_demo\cloudDemo\cloudalibaba-provider-paymemnt9001\src\main\resources" />
+      <recent name="E:\cloud_demo\cloudDemo\cloudalibaba-consumer-nacos-order83\src\main\resources" />
+      <recent name="E:\cloud_demo\cloudDemo\cloudalibaba-provider-paymemnt9002\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -109,20 +108,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigClientMain3355">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dj.cloud.test.Test" />
-      <module name="cloud-gateway-gateway9527" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dj.cloud.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.SentinelMain8401">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -170,41 +156,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigCenterMain3344" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigCenterMain3344" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-center-3344" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dj.cloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.ConfigCenterMain3344" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigClientMain3355" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigClientMain3355" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-client-3355" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dj.cloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.ConfigClientMain3355" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaMain7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-eureka-server7001" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dj.cloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.EurekaMain7001" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -216,14 +177,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GateWayMain9527" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="GateWayMain9527" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-gateway-gateway9527" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dj.cloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.GateWayMain9527" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -239,6 +194,45 @@
     <configuration name="HystrixMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-provider-hystrix-payment8001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.HystrixMain8001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosConfigClientMain3377" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-config-nacos-client3377" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dj.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.NacosConfigClientMain3377" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosProviderMain9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-provider-paymemnt9001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dj.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.NacosProviderMain9001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosProviderMain9002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-provider-paymemnt9002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dj.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.NacosProviderMain9002" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -278,6 +272,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderNacosMain83" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-consumer-nacos-order83" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dj.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.OrderNacosMain83" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymentMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-provider-payment8001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.PaymentMain8001" />
@@ -306,13 +313,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SentinelMain8401" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-sintinel-service8401" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dj.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.SentinelMain8401" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamRabbitConsumerMain8802" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-stream-rabbitmq-consumer8802" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.StreamRabbitConsumerMain8802" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamRabbitMain8801" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-stream-rabbitmq-8801" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dj.cloud.StreamRabbitMain8801" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ConfigClientMain3355" />
-        <item itemvalue="Spring Boot.ConfigCenterMain3344" />
-        <item itemvalue="Spring Boot.EurekaMain7001" />
-        <item itemvalue="Spring Boot.GateWayMain9527" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Spring Boot.SentinelMain8401" />
+        <item itemvalue="Spring Boot.NacosConfigClientMain3377" />
+        <item itemvalue="Spring Boot.OrderNacosMain83" />
+        <item itemvalue="Spring Boot.NacosProviderMain9002" />
+        <item itemvalue="Spring Boot.NacosProviderMain9001" />
       </list>
     </recent_temporary>
   </component>
@@ -355,7 +389,9 @@
       <updated>1590898712717</updated>
       <workItem from="1590898714535" duration="24335000" />
       <workItem from="1591422949317" duration="7400000" />
-      <workItem from="1591440436593" duration="16484000" />
+      <workItem from="1591440436593" duration="16598000" />
+      <workItem from="1591498391577" duration="22905000" />
+      <workItem from="1592029762979" duration="14665000" />
     </task>
     <task id="LOCAL-00001" summary="hystrix">
       <created>1590929429347</created>
@@ -385,7 +421,35 @@
       <option name="project" value="LOCAL" />
       <updated>1590939853413</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="cloud stream">
+      <created>1591517889558</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591517889558</updated>
+    </task>
+    <task id="LOCAL-00006" summary="cloud stream">
+      <created>1591523149497</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591523149497</updated>
+    </task>
+    <task id="LOCAL-00007" summary="nacos 注册中心">
+      <created>1591540309662</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591540309662</updated>
+    </task>
+    <task id="LOCAL-00008" summary="nacos 配置中心">
+      <created>1591545586841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591545586841</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,108 +459,122 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="hystrix" />
     <MESSAGE value="HystrixDashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="HystrixDashboard" />
+    <MESSAGE value="cloud stream" />
+    <MESSAGE value="nacos 注册中心" />
+    <MESSAGE value="nacos 配置中心" />
+    <option name="LAST_COMMIT_MESSAGE" value="nacos 配置中心" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="23" key="#Project_Structure" timestamp="1591443355491">
+    <state x="275" y="23" key="#Project_Structure" timestamp="1591541313126">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="23" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1591443355491" />
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1591445058196">
+    <state x="275" y="23" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1591541313126" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1591507290469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591445058196" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591507290468" />
     <state x="529" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1590898781802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="529" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1590898781802" />
-    <state x="135" y="0" key="CommitChangelistDialog2" timestamp="1590939850226">
+    <state x="135" y="0" key="CommitChangelistDialog2" timestamp="1591545583446">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="135" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590939850226" />
+    <state x="135" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591545583446" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1591463296409">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591463296409" />
-    <state width="905" height="327" key="GridCell.Tab.0.bottom" timestamp="1591468989320">
+    <state width="905" height="253" key="GridCell.Tab.0.bottom" timestamp="1592064820656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="327" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591468989320" />
-    <state width="905" height="327" key="GridCell.Tab.0.center" timestamp="1591468989320">
+    <state width="905" height="253" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592064820656" />
+    <state width="905" height="253" key="GridCell.Tab.0.center" timestamp="1592064820656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="327" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591468989320" />
-    <state width="905" height="327" key="GridCell.Tab.0.left" timestamp="1591468989320">
+    <state width="905" height="253" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592064820656" />
+    <state width="905" height="253" key="GridCell.Tab.0.left" timestamp="1592064820656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="327" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591468989320" />
-    <state width="905" height="327" key="GridCell.Tab.0.right" timestamp="1591468989320">
+    <state width="905" height="253" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592064820656" />
+    <state width="905" height="253" key="GridCell.Tab.0.right" timestamp="1592064820656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="327" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591468989320" />
-    <state width="905" height="327" key="GridCell.Tab.1.bottom" timestamp="1591468989320">
+    <state width="905" height="253" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592064820656" />
+    <state width="905" height="253" key="GridCell.Tab.1.bottom" timestamp="1592064820657">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="327" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591468989320" />
-    <state width="905" height="327" key="GridCell.Tab.1.center" timestamp="1591468989320">
+    <state width="905" height="253" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592064820657" />
+    <state width="905" height="253" key="GridCell.Tab.1.center" timestamp="1592064820657">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="327" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591468989320" />
-    <state width="905" height="327" key="GridCell.Tab.1.left" timestamp="1591468989320">
+    <state width="905" height="253" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592064820657" />
+    <state width="905" height="253" key="GridCell.Tab.1.left" timestamp="1592064820656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="327" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591468989320" />
-    <state width="905" height="327" key="GridCell.Tab.1.right" timestamp="1591468989320">
+    <state width="905" height="253" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592064820656" />
+    <state width="905" height="253" key="GridCell.Tab.1.right" timestamp="1592064820657">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="327" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591468989320" />
-    <state width="905" height="109" key="GridCell.Tab.2.bottom" timestamp="1591460052496">
+    <state width="905" height="253" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592064820657" />
+    <state width="905" height="253" key="GridCell.Tab.2.bottom" timestamp="1592064820658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="109" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591460052496" />
-    <state width="905" height="109" key="GridCell.Tab.2.center" timestamp="1591460052496">
+    <state width="905" height="253" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592064820658" />
+    <state width="905" height="253" key="GridCell.Tab.2.center" timestamp="1592064820658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="109" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1591460052496" />
-    <state width="905" height="109" key="GridCell.Tab.2.left" timestamp="1591460052496">
+    <state width="905" height="253" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1592064820658" />
+    <state width="905" height="253" key="GridCell.Tab.2.left" timestamp="1592064820657">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="109" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1591460052496" />
-    <state width="905" height="109" key="GridCell.Tab.2.right" timestamp="1591460052496">
+    <state width="905" height="253" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1592064820657" />
+    <state width="905" height="253" key="GridCell.Tab.2.right" timestamp="1592064820658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="905" height="109" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1591460052496" />
+    <state width="905" height="253" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1592064820658" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1591438925994">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1591438925994" />
-    <state x="351" y="75" key="RollbackChangesDialog" timestamp="1591441140180">
+    <state x="351" y="75" key="RollbackChangesDialog" timestamp="1591506185074">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="351" y="75" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591441140180" />
+    <state x="351" y="75" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591506185074" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1591440975912">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591440975912" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1590939854606">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1591545588010">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590939854606" />
-    <state x="378" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1591440441312">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591545588010" />
+    <state x="378" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1592036159102">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="225" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591440441312" />
+    <state x="378" y="225" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592036159102" />
     <state x="475" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590903954762">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1590903954762" />
-    <state x="115" y="63" key="new project wizard" timestamp="1591462185840">
+    <state x="115" y="63" key="new project wizard" timestamp="1592042110934">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="115" y="63" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1591462185840" />
+    <state x="115" y="63" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1592042110934" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1591467882466">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1591467882466" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/src/main/java/com/dj/cloud/controller/RateLimitController.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

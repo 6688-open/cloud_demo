@@ -1,0 +1,58 @@
+server:
+  port: 8802
+
+
+spring:
+  application:
+    name: clould-stream-consumer   #注册进Eureka服务器的微服务名
+  cloud:
+    stream:
+      binders: #在此处配置 需要需要绑定的rabbitmq服务信息
+        defaultRabbit: #用于binding整合
+          type: rabbit  #组件类型
+          environment: #设置相关环境的设置
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings:   # 服务的整合处理
+        input:   # 通道名称
+          destination: studyExchange  #自定义Exchange
+          content-type: application/json # 设置消息类型 本次为json 文本 text/plain
+          binder: defaultRabbit  #设置需要绑定的消息服务的具体设置
+          group: group0000001
+
+
+
+
+
+
+
+
+
+
+
+eureka:
+  client:
+    # 表示将自己注册进去向服务注册中心eureka-server
+    register-with-eureka: true
+    #是否从eureka-server抓取已有的注册信息 默认为true 单节点无所谓 集群必须设置true才能配合ribbon使用负载均衡
+    fetchRegistry: true
+
+    service-url:
+      defaultZone: http://localhost:7001/eureka/ #单机
+      #defaultZone: http://eureka7002.com:7002/eureka, http://eureka7001.com:7001/eureka  #集群版
+  instance:
+    instance-id: clould-stream-consumer8802
+    prefer-ip-address: true  #访问路径可以显示IP地址
+
+#    #Eureka客户端向服务端发送心跳的时间 单位秒 默认30
+    lease-renewal-interval-in-seconds: 30
+#    #Eureka服务端在接收到最后一次心跳后等待时间上线 单位 秒  默认是90秒 超时就删除服务
+    lease-expiration-duration-in-seconds: 90
+
+
+
+

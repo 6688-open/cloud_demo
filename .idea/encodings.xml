@@ -34,5 +34,19 @@
     <file url="file://$PROJECT_DIR$/cloudDemo/cloud-provider-payment8004/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloudDemo/cloud-providerconsul-payment8006/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloudDemo/cloud-providerconsul-payment8006/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloud-stream-rabbitmq-8801/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloud-stream-rabbitmq-8801/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloud-stream-rabbitmq-consumer8802/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloud-stream-rabbitmq-consumer8802/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-config-nacos-client3377/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-config-nacos-client3377/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-consumer-nacos-order83/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-consumer-nacos-order83/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-provider-paymemnt9001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-provider-paymemnt9001/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-provider-paymemnt9002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-provider-paymemnt9002/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloudDemo/cloudalibaba-sintinel-service8401/src/main/resources" charset="UTF-8" />
   </component>
 </project>
