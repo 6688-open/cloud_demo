@@ -112,7 +112,7 @@
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.12</version>
+        <version>4.13.1</version>
         <!--<scope>test</scope>-->
       </dependency>
       <!--lombok start  整合mapstruct 版本必须在1.16.0以上 否则编译有问题-->
