@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-consumer-order80" />
+        <module name="seata-storage-service2002" />
         <module name="cloud-provider-hystrix-payment8001" />
         <module name="cloud-config-center-3344" />
         <module name="cloudalibaba-config-nacos-client3377" />
@@ -25,11 +26,13 @@
         <module name="cloudalibaba-provider-paymemnt9001" />
         <module name="cloud-stream-rabbitmq-8801" />
         <module name="cloud-gate-way-gateway9527" />
+        <module name="seata-account-service2003" />
         <module name="cloud-api-comments" />
         <module name="cloud-config-client-3355" />
         <module name="cloud-providerconsul-payment8006" />
         <module name="cloud-gateway-gateway9527" />
         <module name="cloud-consumer-feign-order80" />
+        <module name="seata-order-service2001" />
         <module name="cloud-stream-rabbitmq-consumer8802" />
       </profile>
     </annotationProcessing>
@@ -60,6 +63,9 @@
       <module name="cloudalibaba-provider-paymemnt9002" target="1.8" />
       <module name="cloudalibaba-sintinel-service8401" target="1.8" />
       <module name="cloudDemo" target="1.8" />
+      <module name="seata-account-service2003" target="1.8" />
+      <module name="seata-order-service2001" target="1.8" />
+      <module name="seata-storage-service2002" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
